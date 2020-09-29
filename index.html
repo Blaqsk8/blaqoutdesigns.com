@@ -3,6 +3,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<style>
+    * {
+    	box-sizing: border-box:
+    }
+    body {
+    	margin: 0;
+    }
     .header {
     	background-color: #f1f1f1;
         padding: 20px;
@@ -30,6 +36,11 @@
         width: 33.33%;
         padding: 15px;
     }
+    .row:after {
+    	content: "";
+        display: table;
+        clear: both;
+    }
     @media screen and (max-width:600px) {
     	.column {
         	width: 100%;
@@ -40,12 +51,35 @@
     <title>BlaqOut Designs</title>
 </head>
 <main>
+
     <div class="header">
         <h1>Welcome to BlaqOut Designs</h1>
         <p>A personal journey through the digital community</p>
     </div>
     
     <div class="topnav">
-    	<a href=
+    	<a href="https://blaqoutdesigns.com/aboutme/about.html">About Me</a>
+        <a href="https://blaqoutdesigns.com/projects/projects.html">Projects</a>
+        <a href="https://blaqoutdesigns.com/forum/forum.html">Forum</a>
+        <a href="https://blaqoutdesigns.com/links/links.html">More Links</a>
+    </div>
+    
+    <div class="row">
+    	<div class="column">
+        	<h2>Intel vs. AMD</h2>
+            <p>A question as old as time, well the short time since we were first introduced to the AMD A series chips. Since then the two rivals have batted insults and traded bits in the highly competetive chip manufacturing space.</p>
+        </div>
+        
+        <div class="column">
+        	<h2>32-bit vs 64-bit</h2>
+            <p>What is the difference between 32-bits and 64-bits. First of all, what is a bit? To put it very simply, a bit is a binary instruction that can be understood by a computer. In our case a bit is either 0 or 1, off or on, yes or no.</p>
+        </div>
+            
+        <div class="column">
+        	<h2>LEGO or Lepin</h2>
+            <p>Do I need to even go down this route? Lepin is the epitome of knock-off, stay away.</p>
+        </div>
+    </div>
+   
 </main>
 </html>
