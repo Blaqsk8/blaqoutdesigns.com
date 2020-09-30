@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Projects</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Projects and Ideas</h1>
+        <p>Some of my projects and ideas that I thoug I would share with the world.</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Tribute</h2>
+            <p>LEGO, learning through play.</p>
+        </div>
+
+        <div class="column">
+            <h2>Survey Form</h2>
+            <p>Tell me what you think, honestly.</p>
+        </div>
+
+        <div class="column">
+            <h2>Product Landing Page</h2>
+            <p>Lego Star Wars Snowspeeder 75049</p>
+        </div>
+
+        <div class="column">
+            <h2>Technical Documentation</h2>
+            <p>Breakdown of my digital comic naming scheme rules.</p>
+        </div>
+
+        <div class="column">
+            <h2>Personal Portfolio</h2>
+            <p>My triumphs, my success, my failures, my losses, and my insights.</p>
+        </div>
+
+    </div>
+</body>
+</html>
