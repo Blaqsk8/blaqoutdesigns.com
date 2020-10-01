@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LEGO!</title>
     <style>
         * {
@@ -22,9 +23,28 @@
         .fleximage {
             display: flex;
         }
+
+        .fleximage > img {
+            width: auto;
+            height: 100%;
+        }
         .flextext {
             display: flex;
             background-color: #f1f1f1;
+        }
+        .navbar {
+        	display: flex;
+            background-color: #333;
+        }
+        .navbar > a {
+            text-decoration: none;
+            background-color: #a9a4a4;
+            color: black;
+            margin: 2px;
+        }
+        .navbar a:hover {
+            background-color: #212020;
+            color: white;
         }
         img {
             border-radius: 8px;
@@ -39,13 +59,19 @@
 </head>
 <body>
 
+    <div class="navbar">
+        <a href="https://blaqoutdesigns.com/index.html">Home</a>
+        <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
+        <a href="https://blaqoutdesigns.com/links/links.html">Links</a>
+    </div>
+
     <div class="header">
         <h1>LEGO</h1>
         <p>A Breif History</p>
     </div>
 
     <div class="fleximage">
-        <img src="https://blaqoutdesigns.com/images/olekristiansen.jpg" width="460">
+        <img src="https://blaqoutdesigns.com/images/olekristiansen.jpg">
     </div>
 
     <div class="flextext">
@@ -68,10 +94,14 @@
 
     <div class="flextext">
         <ul class="a">
-            <li>1960: Sadly, a warehouse fire destroyed most of the wooden toy inventory, paving the way 
-            for the plastic line to take over</li>
-            <li>1961: LEGO started its very interesting partnership with the Samsonite company to 
-            gain access and exposure to the North American market</li>
+            <li>
+                1960: Sadly, a warehouse fire destroyed most of the wooden toy inventory, paving the way
+                for the plastic line to take over
+            </li>
+            <li>
+                1961: LEGO started its very interesting partnership with the Samsonite company to
+                gain access and exposure to the North American market
+            </li>
             <li>1962: The first LEGO wheels come rolling into production!</li>
             <li>1964: A more stable ABS plastic finally replaced the fical cellulose acetate.</li>
             <li>1966: The LEGO Train series is released, originally powered by 4.5 volts.</li>
