@@ -10,37 +10,58 @@
             box-sizing: border-box;
         }
 
+        body {
+            margin: 0;
+        }
+
         .header {
-            font-family: sans-serif;
-            background-color: #f1f1f1;
-            padding: 20px;
-            text-align: center
-        }
-
-        .fleximage {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f1f1f1;
         }
 
-            .fleximage > img {
-                width: auto;
-                height: 100%;
+            .header > h {
+                margin: 15px;
+                background-color: f2f2f2;
+                font-size: 15px;
             }
 
-        .flextext {
+            .header > img {
+                margin: 8px;
+            }
+
+        .flex-page {
             display: flex;
             background-color: #f1f1f1;
+            margin: 15px;
+            align-content: space-between;
         }
+
+            .flex-page > div {
+                background-color: #f1f1f1;
+                text-align: left;
+                margin: 12px;
+            }
+
+            .flex-page > img {
+                margin: 5px;
+                align-self: center;
+            }
 
         .navbar {
             display: flex;
-            background-color: #333;
+            background-color: #888;
+            justify-content: center;
+            height: 60px;
         }
 
             .navbar > a {
                 text-decoration: none;
-                background-color: #a9a4a4;
+                background-color: #888;
                 color: black;
-                margin: 2px;
+                padding: 6px;
+                align-self: center;
             }
 
             .navbar a:hover {
@@ -48,9 +69,10 @@
                 color: white;
             }
 
-        body {
-            margin: 0;
-        }
+            .navbar h2 {
+                background-color: transparent;
+                align-self: center;
+            }
 
         img {
             border-radius: 8px;
@@ -63,113 +85,56 @@
         }
     </style>
 </head>
-<body id="main">
+<body>
 
     <div class="navbar">
+        <h2 style="flex-basis:100%">B-Robs Guitboxes</h2><br>
         <a href="https://blaqoutdesigns.com/index.html">Home</a>
         <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
         <a href="https://blaqoutdesigns.com/links/links.html">Links</a>
     </div>
 
-    <div class="header">
-        <h1 id="title">LEGO</h1>
-        <p>A Brief History</p>
+    <div class="header" id="header">
+        <div>
+            <h2>Quality Guitars at Ghastly Prices</h2>
+        </div>
+
+        <div>
+            <form>
+                <input type="email" id="email" name="email" value="Enter your email address"><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
     </div>
 
-    <div class="fleximage" id="img-div">
-        <img src="https://blaqoutdesigns.com/images/olekristiansen.jpg" id="image">
+    <div class="flex-page" name="Material Highlight">
+        <img src="https://blaqoutdesigns.com/images/icons8-fire-50.png" alt="fire" />
+        <div>
+            <h2>Flammable Materials</h2>
+            <p>Our guitars are made of the finest flammable materials</p>
+        </div>
     </div>
 
-    <div class="flextext" id="img-caption">
-        <p>Ole Kristiansen</p>
+    <div class="flex-page" name="Shipping Highlight">
+        <div>
+            <h2>Slow Shipping</h2>
+            <p>
+                We ship out guitars very slowly, just to make sure you are
+                frustrated enough when it arrives damaged
+            </p>
+        </div>
     </div>
 
-    <div class="flextext">
-        <h2>The Early Days</h2>
+    <div class="flex-page" name="Customer Focus">
+        <div>
+            <h2>Satisfaction Suggested</h2>
+            <p>We would really like you to be satisfied</p>
+        </div>
     </div>
 
-    <div class="flextext">
-        <ul class="a">
-            <li>1932: LEGO Founder, Ole Kirk Christiansen, began</li>
-            <li>1934: Ole Kirk held a naming contest within the company, shortly LEGO was born</li>
-            <li>1947: Following WWII, Ole Kirk was able to invest in a plastic injection molding machine.</li>
-            <li>1949: LEGO starts producing plastic bricks similar to other Toy companies of the era</li>
-            <li>1955: Retooling of the brand led to the LEGO System Era, with the "Town Plan" as its focal model</li>
-        </ul>
-    </div>
-
-    <div class="flextext">
-        <h2>Innovations (1960-1969)</h2>
-    </div>
-
-    <div class="flextext">
-        <ul class="a">
-            <li>
-                1960: Sadly, a warehouse fire destroyed most of the wooden toy inventory, paving the way
-                for the plastic line to take over
-            </li>
-            <li>
-                1961: LEGO started its very interesting partnership with the Samsonite company to
-                gain access and exposure to the North American market
-            </li>
-            <li>1962: The first LEGO wheels come rolling into production!</li>
-            <li>1964: A more stable ABS plastic finally replaced the fical cellulose acetate.</li>
-            <li>1966: The LEGO Train series is released, originally powered by 4.5 volts.</li>
-            <li>1968: LEGOLAND Billund Opens.</li>
-            <li>1969: BOOM!! Duplo.</li>
-        </ul>
-    </div>
-
-    <div class="flextext">
-        <h2>Expansion (1970-1991)</h2>
-    </div>
-
-    <div class="flextext">
-        <ul class="a">
-            <li>1972: LEGO introduces the first floating hulls, allowing out LEGO boats to float!!</li>
-            <li>1974: Enfield, Connecticut opens the first LEGO plant in North America.</li>
-            <li>1974: Human figures were added to sets, a precurser to the "Minifigure".</li>
-            <li>1975: In an effort to expand the range of products, the "Expert Series" was released.</li>
-            <li>1978: The "Minifigure" is released...then...</li>
-            <li>1978: LEGO Space...NUFF Said!</li>
-            <li>1981: The second generation of LEGO Trains are released </li>
-            <li>1982: Expert Series is renamed to LEGO Technic.</li>
-        </ul>
-    </div>
-
-    <div class="flextext">
-        <h2>Decline? (1992-2004)</h2>
-    </div>
-
-    <div class="flextext">
-        <ul class="a">
-            <li>1992: The LEGO Group starts to see a decline in profits.</li>
-            <li>1996: A new school of designers entered the company, with mixed commercial results.</li>
-            <li>1997: LEGO Pirates Retired!?!?</li>
-            <li>1998: ...</li>
-            <li>1999: LEGO STAR WARS</li>
-            <li>2000: ...</li>
-            <li>2001: ...</li>
-            <li>2002: ...</li>
-            <li>2003: ...</li>
-            <li>2004: ...</li>
-        </ul>
-    </div>
-
-    <div class="flextext">
-        <h2>Recovery (2005-Present)</h2>
-    </div>
-
-    <div class="flextext">
-        <ul class="a">
-            <li>2005: LEGO STAR WARS Episode III !!!</li>
-            <li>2014: THe LEGO Movie</li>
-        </ul>
-    </div>
-
-    <div class="flextext">
-        <p>To get more information, visit the LEGO wikipedia by clicking <a href="https://en.wikipedia.org/wiki/Lego" id="tribute-link" target="_blank">here.</a></p>
-    </div>
+    <a target="_blank" href="https://icons8.com/icons/set/free-shipping">Free Shipping icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 </body>
 </html>
