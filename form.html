@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            font-family: sans-serif;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center
+        }
+
+        .flexform {
+        	display: flex;
+            padding: 25px;
+            background-color: dodgerblue;
+            background-size: 100px 80px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .flexform > label {
+        	background-color: #f1f1f1;
+            color: black;
+            text-align: center;
+            margin: 5px;
+        }
+        .flexform > input {
+        	color: black;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+        .navbar > a {
+            text-decoration: none;
+            background-color: #a9a4a4;
+            color: black;
+            margin: 2px;
+        }
+
+        .navbar a:hover {
+            background-color: #212020;
+            color: white;
+        }
+
+        img {
+            border-radius: 8px;
+            width: auto;
+            height: 100%;
+        }
+
+        ul.a {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="https://blaqoutdesigns.com/index.html">Home</a>
+        <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
+        <a href="https://blaqoutdesigns.com/links/links.html">Links</a>
+    </div>
+    
+    <div class="header">
+    	<div>Please take our brief LEGO survey</div>
+    </div>
+    
+    <form class="flexform">
+    	<label for="fname" id="name-label">Name</label>
+        <input type="text" id="fname" name="fname" value="Please enter your name">
+        <label for="email" id="email-label">E-Mail</label>
+        <input type="email" id="email" name="email" value="Please enter your e-mail">
+        <label for="number" id="number-label">Number of Lego Sets</label>
+        <input type="number" id="number" name="number" value="Enter a number">
+        <input type="submit" value="Submit">  
+    </form>
+
+ </body>
+</html>
