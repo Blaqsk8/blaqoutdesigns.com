@@ -46,13 +46,15 @@
         .navbar {
             display: flex;
             background-color: #333;
-            justify-content: flex-end;
+            justify-content: center;
+            height: 60px;
         }
         .navbar > a {
             text-decoration: none;
             background-color: #333;
             color: black;
-            margin: 2px;
+            padding: 6px;
+            align-self: center;
             
         }
 
@@ -62,8 +64,8 @@
         }
         
         .navbar h2 {
-        	background-color: #333;
-            
+        	background-color: transparent;
+            align-self: center;
         }
 
         img {
@@ -89,6 +91,15 @@
     <div class="header" id="header">
     	<div>
         	<h2>Quality Guitars at Ghastly Prices</h2>
+       	</div>
+        
+        <div>
+        	<form>
+                <input type="email" id="email" name="email" value="Enter your email address"><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                
+            </form>
         </div>
     </div>
     
@@ -116,5 +127,5 @@
     
     Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
- </body>
+</body>
 </html>
