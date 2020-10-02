@@ -14,6 +14,29 @@
             margin: 0;
         }
 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #f1f1f1;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
         .header {
             display: flex;
             flex-direction: column;
@@ -48,51 +71,18 @@
                 margin: 5px;
                 align-self: center;
             }
-
-        .navbar {
-            display: flex;
-            background-color: #888;
-            justify-content: center;
-            height: 60px;
-        }
-
-            .navbar > a {
-                text-decoration: none;
-                background-color: #888;
-                color: black;
-                padding: 6px;
-                align-self: center;
-            }
-
-            .navbar a:hover {
-                background-color: #212020;
-                color: white;
-            }
-
-            .navbar h2 {
-                background-color: transparent;
-                align-self: center;
-            }
-
-        img {
-            border-radius: 8px;
-            width: auto;
-            height: 100%;
-        }
-
-        ul.a {
-            list-style-type: circle;
-        }
     </style>
 </head>
 <body>
 
-    <div class="navbar">
-        <h2 style="flex-basis:100%">B-Robs Guitboxes</h2><br>
-        <a href="https://blaqoutdesigns.com/index.html">Home</a>
-        <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
-        <a href="https://blaqoutdesigns.com/links/links.html">Links</a>
-    </div>
+    <ul class="navbar">
+        <li><img src="https://blaqoutdesigns.com/images/icons8-progressive-rock-50.png" alt="Double Guitars" id="header-img"></li>
+        <li><h2 style="flex-basis:100%">B-Robs Guitboxes</h2></li>
+        <li><a href="https://blaqoutdesigns.com/index.html">Home</a></li>
+        <li><a href="https://blaqoutdesigns.com/aboutme/about.html">About</a></li>
+        <li><a href="https://blaqoutdesigns.com/links/links.html">Links</a></li>
+        <li><a href="#ShippingHighlight">Highlights</a>
+    </ul>
 
     <div class="header" id="header">
         <div>
@@ -117,7 +107,7 @@
         </div>
     </div>
 
-    <div class="flex-page" name="Shipping Highlight">
+    <div class="flex-page" name="Shipping Highlight" id="ShippingHighlight">
         <div>
             <h2>Slow Shipping</h2>
             <p>
