@@ -7,6 +7,11 @@
     <title>LEGO!</title>
     <style>
 
+        body {
+            margin: 0;
+            background-color: #A7D49B;
+        }
+
         h3 {
             font-size: 24px;
         }
@@ -19,34 +24,37 @@
             margin: 0;
             padding: 0;
             width: 200px;
-            background-color: #f1f1f1;
+            background-color: #696047;
             position: fixed;
             height: 100%;
             overflow: auto;
         }
 
-            .navbar ul {
-                list-style-type: none;
-            }
-
-            .navbar li {
-                color: #000;
-                display: block;
-            }
-
             .navbar a {
+                display: block;
+                padding: 16px;
                 text-decoration: none;
                 color: #000;
             }
 
                 .navbar a:hover {
+                    border-radius: 10px;
+                    border: 2px solid black;
                     background-color: black;
                     color: white;
                 }
 
         .column {
+            background-color: #A7D49B;
             margin-left: 200px;
-            padding: 1px 16px;
+            padding: 1px;
+        }
+
+        .footer {
+            background-color: #55251D;
+            bottom: 0;
+            postion: fixed;
+            color: white;
         }
 
         @media screen and (max-width: 478px) {
@@ -71,14 +79,12 @@
     <div class="flexbody">
 
         <nav id="navbar" class="navbar">
-            <ul>
-                <li><h2>Python Data Types</h2></li>
-                <li><a href="#Numeric Types">Numeric Types</a></li>
-                <li><a href="#Sequence Types">Sequence Types</a></li>
-                <li><a href="#Text Type">Text Type</a></li>
-                <li><a href="#Set Types">Set Types</a></li>
-                <li><a href="#Mapping Type">Mapping Type</a></li>
-            </ul>
+            <h2>Python Data Types</h2>
+            <a href="#Numeric Types">Numeric Types</a>
+            <a href="#Sequence Types">Sequence Types</a>
+            <a href="#Text Type">Text Type</a>
+            <a href="#Set Types">Set Types</a>
+            <a href="#Mapping Type">Mapping Type</a>
         </nav>
 
         <main class="column" id="main-doc">
@@ -108,13 +114,12 @@
                 <h4>tuple</h4>
                 <p>tuple()</p>
                 <p>Immutable sequence, used to store data</p>
-                <code>
-                    t = ([1, 2], [3, 4])
-                    <h4>range</h4>
-                    <p>range()</p>
-                    <p>Immutable sequence between to set points</p>
-                    <code>r = range(10)</code><br>
-                    <code>r = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+                <code>t = ([1, 2], [3, 4])</code>
+                <h4>range</h4>
+                <p>range()</p>
+                <p>Immutable sequence between to set points</p>
+                <code>r = range(10)</code><br>
+                <code>r = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
             </section>
 
             <section class="main-section">
@@ -129,11 +134,15 @@
                 <h3 id="Set Types">Set Type</h3>
                 <h4>set</h4>
                 <p>set()</p>
-                <p>Immutable sequences of Unicode points</p>
+                <p>
+                    Unordered collection of distinct hashable objects. Common uses include
+                    membership testing, removing duplictes from a sequemce, and computing mathematical
+                    operations.
+                </p>
                 <code>s = set(1, 3, 4)</code>
                 <h4>frozen set</h4>
                 <p>frozenset()</p>
-                <p>Immutable sequences of Unicode points</p>
+                <p>Immutable set of hashable objects.</p>
                 <code>fs = frozenset(1, 4, 5)</code>
             </section>
 
@@ -141,13 +150,23 @@
                 <h3 id="Mapping Type">Mapping Type</h3>
                 <h4>dictionary</h4>
                 <p>dict()</p>
-                <p>Immutable sequences of Unicode points</p>
-                <code>d = {jim: 1, jom: 2}</code>
+                <p>
+                    Maps a hashable values to arbitrary objects. Mappings are mutable objects. Keys
+                    are mapped to values.
+                </p>
+                <code>{key: value}</code><br>
+                <code>d = {jim: 1, jom: 2}</code><br>
+                <code>d[jim] = 1</code>
             </section>
 
-
-
         </main>
+
+        <div class="footer">
+            <a href="https://blaqoutdesigns.com/index.html">Home</a>
+            <a href="https://blaqoutdesigns.com/links/links.html">
+                Links/a>
+                <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
+        </div>
 
     </div>
 
