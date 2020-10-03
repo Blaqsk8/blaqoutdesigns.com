@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,57 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LEGO!</title>
     <style>
-    
-    .main-section {
-    	color: green;
-    }
-        
 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 175px;
+            background-color: #999;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            padding: 16px 36px;
+            color: #000;
+        }
+
+            li a:hover {
+                background-color: #555;
+                color: white;
+            }
+
+        .flexbody {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flexcolumn {
+            flex: 70%;
+            padding: 20px;
+        }
+
+        .navbar {
+            flex: 30%;
+            padding: 20px;
+        }
+
+        .main-section {
+            color: green;
+        }
+
+        @media screen and (max-width: 600px) {
+            .flexbody {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
 
-<main id="main-doc">
+    <div class="flexbody">
 
-	<nav id="navbar">
-    	<h1>Powerful Python Data Types</h1>
-    </nav>
+        <nav class="navbar">
+            <h4>Common Python Data Types</h4>
+            <ul>
+                <li><a href="#Numeric Types">Numeric Types</a></li>
+                <li><a href="#Sequence Types">Sequence Types</a></li>
+                <li><a href="#Text Type">Text Type</a></li>
+                <li><a href="#Set Types">Set Types</a></li>
+                <li><a href="#Mapping Type">Mapping Type</a></li>
+            </ul>
+        </nav>
 
-	<section class="main-section" id="Lists">
-    	<div>
-        	<h2>Lists</h2>
-            <p>I love Python Lists</p>
-        </div>
-    </section>
-    
-    <section class="main-section" id="Dictionaries">
-    	<div>
-        	<h2>Dictionaries</h2>
-            <p>Python Dictionaries are by far the most useful data type!</p>
-        </div>
-    </section>
-    
-    <section class="main-section" id="Tuples">
-    	<div>
-        	<h2>Tuples</h2>
-            <p>Tuples are usually found in pairs</p>
-        </div>
-    </section>
-    
-    <section class="main-section" id="Strings">
-    	<div>
-        	<h2>Strings</h2>
-        </div>
-    </section>
-    
-    <section class="main-section" id="Integers">
-    	<div>
-        	<h2>Integers</h2>
-        </div>
-    </section>
+        <main id="main-doc">
+
+            <section>
+                <h3 id="Numeric Types">Numeric Types</h3>
+                <h4>Integer</h4>
+                <p>int()</p>
+                <p>Return an integer of base 10</p>
+                <h4>Float</h4>
+                <p>float()</p>
+                <p>Return a floating point number</p>
+                <h4>Complex</h4>
+                <p>complex()</p>
+                <p>Return a complex number real + imag*1j</p>
+            </section>
+
+            <section>
+                <h3 id="Sequence Types">Numeric Types</h3>
+                <h4>list</h4>
+                <p>list()</p>
+                <p>Mutable sequence, usually used to store items</p>
+                <h4>tuple</h4>
+                <p>tuple()</p>
+                <p>Immutable sequence, used to store data</p>
+                <h4>range</h4>
+                <p>range()</p>
+                <p>Immutable sequence between to set points</p>
+            </section>
+
+            <section>
+                <h3 id="Text Type">Text Type</h3>
+                <h4>string</h4>
+                <p>str()</p>
+                <p>Immutable sequences of Unicode points</p>
+
+            </section>
 
 
-</main>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
