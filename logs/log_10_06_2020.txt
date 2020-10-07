@@ -1,0 +1,6 @@
+AWS Ubuntu Instance has been down since approx 06/09/2020 21:00 EST.
+I fear the server has been currupted.
+Ubuntu-1 Instance Deleted on 06/10/2020 09:16 EST
+New AWS instance to be initiated on 06/10/2020.
+
+New instance will be  better secured.
