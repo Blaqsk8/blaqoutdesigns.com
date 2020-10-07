@@ -1,4 +1,4 @@
-!/usr/etc/python3
+!/usr/bin/python3
 
 import cgi
 
@@ -20,6 +20,7 @@ def htmlTail():
 if __name__ == "__main__":
     try:
         htmlTop()
+        print
         htmlTail()
     except:
         cgi.print_exception()
