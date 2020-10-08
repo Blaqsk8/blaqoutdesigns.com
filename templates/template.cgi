@@ -20,7 +20,7 @@ def htmlTail():
 if __name__ == "__main__":
     try:
         htmlTop()
-        print
+        print("Hello World")
         htmlTail()
     except:
         cgi.print_exception()
