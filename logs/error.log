@@ -1,0 +1,46 @@
+[Thu Oct 08 00:00:01.739395 2020] [mpm_event:notice] [pid 21804:tid 140171333870720] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:00:01.739440 2020] [core:notice] [pid 21804:tid 140171333870720] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:03:38.974888 2020] [mpm_event:notice] [pid 21804:tid 140171333870720] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:03:39.037606 2020] [mpm_event:notice] [pid 22003:tid 139844164572288] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:03:39.037698 2020] [core:notice] [pid 22003:tid 139844164572288] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:05:22.540076 2020] [mpm_event:notice] [pid 22003:tid 139844164572288] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:05:22.601551 2020] [mpm_event:notice] [pid 22097:tid 140684907062400] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:05:22.601643 2020] [core:notice] [pid 22097:tid 140684907062400] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:05:29.690088 2020] [cgid:error] [pid 22155:tid 140684907062400] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:07:13.121131 2020] [cgid:error] [pid 22156:tid 140684907062400] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:10:03.947162 2020] [cgid:error] [pid 22159:tid 140684907062400] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+/usr/bin/env: 'python\r': No such file or directory
+[Thu Oct 08 00:15:05.596592 2020] [mpm_event:notice] [pid 22097:tid 140684907062400] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:15:05.662055 2020] [mpm_event:notice] [pid 22189:tid 140092348249216] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:15:05.662148 2020] [core:notice] [pid 22189:tid 140092348249216] AH00094: Command line: '/usr/sbin/apache2'
+/usr/bin/env: 'python\r': No such file or directory
+/usr/bin/env: 'python3\r': No such file or directory
+[Thu Oct 08 00:24:40.620674 2020] [mpm_event:notice] [pid 22189:tid 140092348249216] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:24:40.689645 2020] [mpm_event:notice] [pid 22289:tid 140107391157376] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:24:40.689734 2020] [core:notice] [pid 22289:tid 140107391157376] AH00094: Command line: '/usr/sbin/apache2'
+/usr/bin/env: 'python3\r': No such file or directory
+[Thu Oct 08 00:26:13.195684 2020] [mpm_event:notice] [pid 22289:tid 140107391157376] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:26:13.261484 2020] [mpm_event:notice] [pid 22379:tid 140542196487296] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:26:13.261575 2020] [core:notice] [pid 22379:tid 140542196487296] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:26:20.319862 2020] [cgid:error] [pid 22437:tid 140542196487296] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:26:25.583847 2020] [cgid:error] [pid 22438:tid 140542196487296] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:28:39.182275 2020] [mpm_event:notice] [pid 22379:tid 140542196487296] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:28:39.248987 2020] [mpm_event:notice] [pid 22456:tid 140405579355264] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:28:39.249080 2020] [core:notice] [pid 22456:tid 140405579355264] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:33:51.939512 2020] [cgid:error] [pid 22518:tid 140405579355264] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:34:04.136355 2020] [mpm_event:notice] [pid 22456:tid 140405579355264] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:34:04.202639 2020] [mpm_event:notice] [pid 22533:tid 139993369699456] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:34:04.202728 2020] [core:notice] [pid 22533:tid 139993369699456] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:34:09.035447 2020] [cgid:error] [pid 22591:tid 139993369699456] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:34:15.663455 2020] [cgid:error] [pid 22592:tid 139993369699456] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:34:23.072341 2020] [cgid:error] [pid 22593:tid 139993369699456] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:34:28.682647 2020] [cgid:error] [pid 22594:tid 139993369699456] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 00:48:34.218244 2020] [mpm_event:notice] [pid 22533:tid 139993369699456] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 00:48:34.282479 2020] [mpm_event:notice] [pid 22646:tid 139775777649792] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 00:48:34.282579 2020] [core:notice] [pid 22646:tid 139775777649792] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 00:51:45.538504 2020] [cgid:error] [pid 22711:tid 139775777649792] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 01:06:33.714639 2020] [mpm_event:notice] [pid 22646:tid 139775777649792] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 01:06:33.778285 2020] [mpm_event:notice] [pid 22773:tid 140410865452160] AH00489: Apache/2.4.38 (Debian) OpenSSL/1.1.1d configured -- resuming normal operations
+[Thu Oct 08 01:06:33.778380 2020] [core:notice] [pid 22773:tid 140410865452160] AH00094: Command line: '/usr/sbin/apache2'
+[Thu Oct 08 01:13:21.243603 2020] [cgid:error] [pid 22839:tid 140410865452160] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
+[Thu Oct 08 01:14:03.718904 2020] [cgid:error] [pid 22840:tid 140410865452160] (2)No such file or directory: AH01241: exec of '/usr/lib/cgi-bin/template.cgi' failed
