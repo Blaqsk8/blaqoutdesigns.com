@@ -1,0 +1,40 @@
+[Wed Oct 07 19:23:30.057058 2020] [ssl:error] [pid 12480:tid 139638974965504] [client 64.41.200.102:37480] AH02042: rejecting client initiated renegotiation
+[Wed Oct 07 19:23:31.260679 2020] [ssl:error] [pid 12480:tid 139638865860352] [client 64.41.200.102:38106] AH02042: rejecting client initiated renegotiation
+[Wed Oct 07 23:52:02.131973 2020] [authz_core:error] [pid 21807:tid 140170795927296] [client 75.183.93.91:54897] AH01630: client denied by server configuration: /usr/lib/cgi-bin/template.cgi
+[Thu Oct 08 00:04:13.638980 2020] [authz_core:error] [pid 22004:tid 139844051261184] [client 107.77.236.22:9242] AH01630: client denied by server configuration: /usr/lib/cgi-bin/template.cgi
+[Thu Oct 08 00:04:17.596733 2020] [authz_core:error] [pid 22004:tid 139844042868480] [client 107.77.236.22:9242] AH01630: client denied by server configuration: /usr/lib/cgi-bin/template.cgi
+[Thu Oct 08 00:04:33.313239 2020] [authz_core:error] [pid 22005:tid 139844000904960] [client 107.77.94.55:35358] AH01630: client denied by server configuration: /usr/lib/cgi-bin/
+[Thu Oct 08 00:04:45.896145 2020] [authz_core:error] [pid 22004:tid 139844009297664] [client 107.77.94.55:25866] AH01630: client denied by server configuration: /usr/lib/cgi-bin/template.cgi
+[Thu Oct 08 00:05:29.690398 2020] [cgid:error] [pid 22099:tid 140684774323968] [client 107.77.94.55:1026] End of script output before headers: template.cgi
+[Thu Oct 08 00:07:13.121451 2020] [cgid:error] [pid 22099:tid 140684740753152] [client 107.77.236.22:55214] End of script output before headers: template.cgi
+[Thu Oct 08 00:10:03.947504 2020] [cgid:error] [pid 22099:tid 140684707182336] [client 107.77.236.22:17658] End of script output before headers: template.cgi
+[Thu Oct 08 00:14:57.749195 2020] [cgid:error] [pid 22100:tid 140684656891648] [client 107.77.236.22:3438] End of script output before headers: template.cgi
+[Thu Oct 08 00:16:07.983812 2020] [cgid:error] [pid 22192:tid 140092314138368] [client 107.77.236.22:45930] End of script output before headers: template.cgi
+[Thu Oct 08 00:23:41.198383 2020] [cgid:error] [pid 22192:tid 140092236625664] [client 107.77.236.22:43894] End of script output before headers: template.cgi
+[Thu Oct 08 00:25:05.894938 2020] [cgid:error] [pid 22292:tid 140107252225792] [client 107.77.236.22:34858] End of script output before headers: template.cgi
+[Thu Oct 08 00:26:20.320177 2020] [cgid:error] [pid 22382:tid 140542042162944] [client 107.77.236.22:31418] End of script output before headers: template.cgi
+[Thu Oct 08 00:26:25.584180 2020] [cgid:error] [pid 22382:tid 140542033770240] [client 107.77.236.22:42822] End of script output before headers: template.cgi
+[Thu Oct 08 00:33:51.939840 2020] [cgid:error] [pid 22458:tid 140405425301248] [client 107.77.236.22:37330] End of script output before headers: template.cgi
+[Thu Oct 08 00:34:09.035750 2020] [cgid:error] [pid 22536:tid 139993209087744] [client 107.77.236.22:51830] End of script output before headers: template.cgi
+[Thu Oct 08 00:34:15.663768 2020] [cgid:error] [pid 22535:tid 139993217480448] [client 107.77.94.55:29934] End of script output before headers: template.cgi
+[Thu Oct 08 00:34:23.072651 2020] [cgid:error] [pid 22536:tid 139993242658560] [client 107.77.94.55:53682] End of script output before headers: template.cgi
+[Thu Oct 08 00:34:28.682999 2020] [cgid:error] [pid 22535:tid 139993183909632] [client 107.77.236.22:26226] End of script output before headers: template.cgi
+[Thu Oct 08 00:51:45.538840 2020] [cgid:error] [pid 22648:tid 139775760324352] [client 107.77.236.22:48778] End of script output before headers: template.cgi
+[Thu Oct 08 01:13:21.243929 2020] [cgid:error] [pid 22776:tid 140410701723392] [client 107.77.236.22:61966] End of script output before headers: template.cgi
+[Thu Oct 08 01:14:03.719232 2020] [cgid:error] [pid 22775:tid 140410718508800] [client 107.77.94.55:10638] End of script output before headers: template.cgi
+[Thu Oct 08 01:19:11.288317 2020] [authz_core:error] [pid 22903:tid 139675759015680] [client 107.77.94.55:63826] AH01630: client denied by server configuration: /usr/lib/cgi-bin/template.cgi
+[Thu Oct 08 20:02:38.935237 2020] [wsgi:error] [pid 28718:tid 140003921360640] [client 107.77.94.56:11486] mod_wsgi (pid=28718): Exception occurred processing WSGI script '/var/www/html/wsgi.py'.
+[Thu Oct 08 20:02:38.935279 2020] [wsgi:error] [pid 28718:tid 140003921360640] [client 107.77.94.56:11486] Traceback (most recent call last):
+[Thu Oct 08 20:02:38.935295 2020] [wsgi:error] [pid 28718:tid 140003921360640] [client 107.77.94.56:11486]   File "/var/www/html/wsgi.py", line 11, in application
+[Thu Oct 08 20:02:38.935338 2020] [wsgi:error] [pid 28718:tid 140003921360640] [client 107.77.94.56:11486]     start_response(status, reponse_header)
+[Thu Oct 08 20:02:38.935354 2020] [wsgi:error] [pid 28718:tid 140003921360640] [client 107.77.94.56:11486] NameError: global name 'reponse_header' is not defined
+[Thu Oct 08 20:05:58.336122 2020] [wsgi:error] [pid 28717:tid 140004019971840] [client 107.77.94.56:53526] mod_wsgi (pid=28717): Exception occurred processing WSGI script '/var/www/html/wsgi.py'.
+[Thu Oct 08 20:05:58.336163 2020] [wsgi:error] [pid 28717:tid 140004019971840] [client 107.77.94.56:53526] Traceback (most recent call last):
+[Thu Oct 08 20:05:58.336181 2020] [wsgi:error] [pid 28717:tid 140004019971840] [client 107.77.94.56:53526]   File "/var/www/html/wsgi.py", line 11, in application
+[Thu Oct 08 20:05:58.336224 2020] [wsgi:error] [pid 28717:tid 140004019971840] [client 107.77.94.56:53526]     start_response(status, reponse_header)
+[Thu Oct 08 20:05:58.336241 2020] [wsgi:error] [pid 28717:tid 140004019971840] [client 107.77.94.56:53526] NameError: global name 'reponse_header' is not defined
+[Thu Oct 08 20:47:55.848879 2020] [wsgi:error] [pid 28976:tid 140425289524992] [client 107.77.94.56:56522] mod_wsgi (pid=28976): Exception occurred processing WSGI script '/var/www/html/wsgi.py'.
+[Thu Oct 08 20:47:55.848914 2020] [wsgi:error] [pid 28976:tid 140425289524992] [client 107.77.94.56:56522] Traceback (most recent call last):
+[Thu Oct 08 20:47:55.848931 2020] [wsgi:error] [pid 28976:tid 140425289524992] [client 107.77.94.56:56522]   File "/var/www/html/wsgi.py", line 11, in application
+[Thu Oct 08 20:47:55.848976 2020] [wsgi:error] [pid 28976:tid 140425289524992] [client 107.77.94.56:56522]     start_response(status, reponse_header)
+[Thu Oct 08 20:47:55.848993 2020] [wsgi:error] [pid 28976:tid 140425289524992] [client 107.77.94.56:56522] NameError: global name 'reponse_header' is not defined
