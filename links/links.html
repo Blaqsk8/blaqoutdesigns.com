@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEGO!</title>
+    <title>LINKS and more...</title>
     <style>
         * {
             box-sizing: border-box;
@@ -25,14 +25,10 @@
             display: flex;
         }
 
-            .fleximage > img {
-                width: auto;
-                height: 100%;
-            }
-
         .flextext {
             display: flex;
-            background-color: #f1f1f1;
+            background-color: #f6f6f6;
+	    
         }
 
         .navbar {
@@ -44,7 +40,8 @@
                 text-decoration: none;
                 background-color: #a9a4a4;
                 color: black;
-                margin: 2px;
+                margin: 0;
+		padding: 2px;
             }
 
             .navbar a:hover {
@@ -58,17 +55,55 @@
             height: 100%;
         }
 
-        ul.a {
-            list-style-type: circle;
+	ul li {
+	    list-style-type: none;
+	    margin: 10px;
+	    padding: 25px;
+	    background-color: transparent;
+	}
+
+        ul a {
+	    font-size: 32px;
+	    padding: 20px;
+            list-style-type: none;
+	    text-decoration: none;
+	    color: black;
+	    background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
 
+    <div class="header">
+	<h2>Links Links Links</h2>
+    </div>
+
     <div class="navbar">
         <a href="https://blaqoutdesigns.com/index.html">Home</a>
         <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
-        <a href="https://blaqoutdesigns.com/links/links.html">Links</a>
+        <a href="https://blaqoutdesigns.com/links/VideoLinks_01.html">Links</a>
+    </div>
+
+    <div class="flextext">
+        <ul>
+
+        <li>
+	<a href="https://www.lego.com/en-us">LEGO</a>
+	</li>
+
+        <li>
+	<a href="https://brickset.com">Brickset</a>
+	</li>
+
+	<li>
+	<a href="https://python.org">Python</a>
+	</li>
+
+	<li>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+	</li>
+
+	</ul>
     </div>
 
  </body>
