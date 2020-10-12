@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-image: url("https://blaqoutdesigns.com/images/Electric-Guitar-HD-Pictures.jpg");
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #f1f1f1;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 100px 10px 0px 10px;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+            .header > h {
+                margin: 15px;
+                background-color: f2f2f2;
+                font-size: 15px;
+            }
+
+            .header > img {
+                margin: 8px;
+            }
+
+        .flex-page {
+            display: flex;
+            background-color: #f1f1f1;
+            margin: 15px;
+            align-content: space-between;
+        }
+
+            .flex-page > div {
+                background-color: #f1f1f1;
+                margin: 12px;
+            }
+
+            .flex-page > img {
+                margin: 5px;
+                align-self: center;
+            }
+
+        .flex-vid {
+            display: flex;
+            background-color: transparent;
+            margin: 15px;
+            justify-content: center;
+        }
+
+        .flex-tabs {
+            display: flex;
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+            .flex-tabs div {
+                margin: 5px;
+                padding: 5px;
+                border: 2px solid black;
+                background-color: #f1f1f1;
+            }
+
+        .navbar {
+            padding: 5px;
+        }
+
+        .price {
+            font-family: monospace;
+            text-align: center;
+        }
+
+        .title {
+            color: black;
+            text-align: center;
+            font-family: Courier;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="navbar">
+        
+    </ul>
+
+    <div class="header" id="header">
+        <div>
+            <h2>Is This GEOLink?</h2>
+        </div>
+
+    </div>
+
+    <div class="flex-page" name="Material Highlight">
+
+    </div>
+
+    <div class="flex-vid">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/UeIUy8yRmmE" id="video">
+        </iframe>
+    </div>
+
+    <div class="flex-tabs" id="pricing">
+        <div>
+            <a href="https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3">Laszlo</a>
+        </div>
+    </div>
+
+    <div class="flex-vid">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/2QllYHYGR9s" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
