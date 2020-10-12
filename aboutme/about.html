@@ -2,22 +2,66 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<style>
+		.imagebox {
+			border: 2px solid black;
+			justify-content: center;
+		}
+
 		.flex-container {
 			display: flex;
 			align-items: stretch;
 			justify-content: center;
-			background-color: dodgerblue;
+			background-color: transparent;
 			flex-wrap: wrap;
 		}
 
 		.flex-container p {
 			background-color: #f1f1f1;
-			margin: 15px;
-			padding: 20px;
+			margin: 10px;
+			padding: 30px;
 			font-size: 30px;
+			line-height: 1.7;
+			letter-spacing: 4px;
+			word-spacing: 4px;
+		}
+		.flex-container a {
+			text-decoration: none;
+			color: black;
 		}
 
-		header {
+		.header {
+			display: flex;
+			justify-content: center;
+		}
+		.header h2 {
+			font-size: 60px;
+			text-shadow: 4px 4px 5px #E08D79, 2px 2px 1px #E0EFDE;
+			text-align: center;
+		}
+
+		.sub_header {
+			text-align: center;
+			font-size: 30px;
+			font: courier;
+		}
+		
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
 		}
 
 		#roundcorners_01 {
@@ -41,11 +85,71 @@
 	<meta charset="UTF-8" />
 </head>
 <body>
+	<div class="header">
+		<h2>About Me</h2>
+	</div>
+
+	<div class="topnav">
+		<a href="https://blaqoutdesigns.com/index.html">Home</a>
+		<a href="https://blaqoutdesigns.com/projects/projects.html">Projects</a>
+		<a href="https://blaqoutdesigns.com/links/links.html">Links</a>
+	</div>
+
+	<div class="imagebox">
+		<img src="#" alt="A Picture of Me"/>
+	</div>
+	
+
+	<div class="flex-container">
+		<div>
+		<p>My name is Robert and this is my website. This space allows we to host my own privite Computer Science
+		projects. I have always loved computer technology and I am finally able to explore my hobby a little deeper.
+		I will showcase my various projects with the hope to inspire others to crate. </p><br>
+		</div>
+
+		<div>
+		<p>I coded this entire website by hand, using examples and lessons from freecodecamp.org. The main pages are coded 
+		using basic HTML and CSS. No JS nor any other scripts were used. </p><br>
+		</div>
+		
+		<div>
+		<p>We are currently running through AWS on Debian 10. I am able to quickly deploy and maintain remote webservices. 
+		My primary expertise in remote devops is with Linux family of operating systems, mostly Debian.</p><br>
+		</div>
+
+		<div>
+		<p>From this Virtual Private Server platform I will be able to deploy several web technologies, building a resume of 
+		services I am able to work with.The 4th quarter of 2020 will see the deployment of a few Django Webframework projects.</p><br>
+		</div>
+
+		<div>
+		<p>By creating this site with just CSS and HTML allows me to create the site the way I want to without having to
+		worry about being in the confines a specific framework. The only thing I need is text editor and a terminal. Nano
+		has become my new best friend.</p>
+		
+	</div>
+
+	<div class="desc_list">
+		<dl>
+		<dt>Education</dt>
+		<dd>University of Connecticut</dd>
+		<dt>Career Path</dt>
+		<dd>Paper Boy</dd>
+		<dt>Long Term Goals</dt>
+		<dd>Electronics Projects</dd>
+		<dd>Garden</dd>
+		</dl>
+	</div>
+
+	<div class="sub_header">
+		<h2>Here are some links to my favorite places</h2>
+	</div>
+
 	<div class="flex-container" id="roundcorners_flex_01">
-		<p id="roundcorners_flex_02">Books</p>
-		<p id="roundcorners_flex_02">Books</p>
-		<p id="roundcorners_flex_02">Guitars</p>
-		<p style="flex-shrink: 0" id="roundcorners_flex_02">Electronics</p>
+		<a href="https://www.marvel.com"><p id="roundcorners_flex_02">Comics</p></a>
+		<a href="https://www.goodreads.com/list/show/19341"><p id="roundcorners_flex_02">Books</p></a>
+		<a href="https://www.pinkfloyd.com/home.php"><p id="roundcorners_flex_02">Music</p></a>
+		<a href="https://www.adafruit.com"><p style="flex-shrink: 0" id="roundcorners_flex_02">Electronics</p></a>
 	</div>
 </body>
 
