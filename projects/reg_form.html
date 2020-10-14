@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdownbutton {
+            padding: 16px;
+            width: 100%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content > a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .header {
+            font-family: sans-serif;
+            background-color: #f1f1f1;
+            padding: auto;
+	    margin: 0;
+            text-align: center;
+	    font-size: 48px;
+        }
+
+        .flexform {
+            display: flex;
+            padding: 50px 0 0 0;
+            background-color: #f1f1f1;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+            .flexform > label {
+                background-color: #f1f1f1;
+                color: black;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .flexform > input {
+                color: black;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .flexform > button {
+                background-color: #f1f1f1;
+                margin: 5px;
+                text-align: center;
+            }
+
+        .flexarea > textarea {
+            flex: 1;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+            .navbar > a {
+                text-decoration: none;
+                background-color: #333;
+                color: white;
+                padding: 5px;
+                font-size: 20px;
+            }
+
+            .navbar a:hover {
+                background-color: #a9a4a4;
+                color: white;
+            }
+
+        img {
+            border-radius: 8px;
+            width: auto;
+            height: 100%;
+        }
+
+        ul.a {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="https://blaqoutdesigns.com/index.html">Home</a>
+        <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
+        <a href="https://blaqoutdesigns.com/links/links.html">Links</a>
+    </div>
+
+    <div class="header">
+        <div>User Registration</div>
+    </div>
+
+    <form method="post" class="flexform">
+
+	<fieldset id="user_info">
+	<legend>User Info</legend>
+	<div> 
+	    <label for="fname" id="name-label">First Name</label>
+        	<input type="text" id="fname" name="fname" value="Please enter your first name">
+	</div>
+
+	<div>
+	    <label for="lname" id="name-label">Last Name</lable>
+		<input type="text" id="lname" name="lname" value="Please enter you last name">
+	</div>
+
+	    <label for="age" id="age-label">Please select your age</label>
+		<input type="range" id="age" name="age" >
+            <label for="email" id="email-label">E-Mail</label>
+        	<input type="email" id="email" name="email" value="Please enter your e-mail" required>
+
+	</fieldset>
+
+    </form>
+
+</body>
+</html>
