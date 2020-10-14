@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO!</title>
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #A7D49B;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        .navbar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #696047;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+            .navbar a {
+                display: block;
+                padding: 16px;
+                text-decoration: none;
+                color: #000;
+            }
+
+                .navbar a:hover {
+                    border-radius: 10px;
+                    border: 2px solid black;
+                    background-color: black;
+                    color: white;
+                }
+
+        .column {
+            background-color: #A7D49B;
+            margin-left: 200px;
+            padding: 1px;
+        }
+
+        .footer {
+            background-color: #55251D;
+            bottom: 0;
+            postion: fixed;
+            color: white;
+        }
+
+        @media screen and (max-width: 478px) {
+            .navbar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .navbal ul {
+                float: left
+            }
+
+            .column {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flexbody">
+
+        <nav id="navbar" class="navbar">
+            <h2>Python Data Types</h2>
+            <a href="#Numeric Types">Numeric Types</a>
+            <a href="#Sequence Types">Sequence Types</a>
+            <a href="#Text Type">Text Type</a>
+            <a href="#Set Types">Set Types</a>
+            <a href="#Mapping Type">Mapping Type</a>
+        </nav>
+
+        <main class="column" id="main-doc">
+
+            <section class="main-section">
+                <h3 id="Numeric Types">Numeric Types</h3>
+                <h4>Integer</h4>
+                <p>int()</p>
+                <p>Return an integer of base 10</p>
+                <code>x = 17</code>
+                <h4>Float</h4>
+                <p>float()</p>
+                <p>Return a floating point number</p>
+                <code>y = 3.1425</code>
+                <h4>Complex</h4>
+                <p>complex()</p>
+                <p>Return a complex number real + imag*1j</p>
+                <code>z = 6 + 3j</code>
+            </section>
+
+            <section class="main-section">
+                <h3 id="Sequence Types">Sequence Types</h3>
+                <h4>list</h4>
+                <p>list()</p>
+                <p>Mutable sequence, usually used to store items</p>
+                <code>l = [1, 2, 3, 4]</code>
+                <h4>tuple</h4>
+                <p>tuple()</p>
+                <p>Immutable sequence, used to store data</p>
+                <code>t = ([1, 2], [3, 4])</code>
+                <h4>range</h4>
+                <p>range()</p>
+                <p>Immutable sequence between to set points</p>
+                <code>r = range(10)</code><br>
+                <code>r = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+            </section>
+
+            <section class="main-section">
+                <h3 id="Text Type">Text Type</h3>
+                <h4>string</h4>
+                <p>str()</p>
+                <p>Immutable sequences of Unicode points</p>
+                <code>s = "sammy"</code>
+            </section>
+
+            <section class="main-section">
+                <h3 id="Set Types">Set Type</h3>
+                <h4>set</h4>
+                <p>set()</p>
+                <p>
+                    Unordered collection of distinct hashable objects. Common uses include
+                    membership testing, removing duplictes from a sequemce, and computing mathematical
+                    operations.
+                </p>
+                <code>s = set(1, 3, 4)</code>
+                <h4>frozen set</h4>
+                <p>frozenset()</p>
+                <p>Immutable set of hashable objects.</p>
+                <code>fs = frozenset(1, 4, 5)</code>
+            </section>
+
+            <section class="main-section">
+                <h3 id="Mapping Type">Mapping Type</h3>
+                <h4>dictionary</h4>
+                <p>dict()</p>
+                <p>
+                    Maps a hashable values to arbitrary objects. Mappings are mutable objects. Keys
+                    are mapped to values.
+                </p>
+                <code>{key: value}</code><br>
+                <code>d = {jim: 1, jom: 2}</code><br>
+                <code>d[jim] = 1</code>
+            </section>
+
+        </main>
+
+        <div class="footer">
+            <a href="https://blaqoutdesigns.com/index.html">Home</a>
+            <a href="https://blaqoutdesigns.com/links/links.html">
+                Links/a>
+                <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
