@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-image: url("https://blaqoutdesigns.com/images/Electric-Guitar-HD-Pictures.jpg");
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: #f1f1f1;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 100px 10px 0px 10px;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+            .header > h {
+                margin: 15px;
+                background-color: f2f2f2;
+                font-size: 15px;
+            }
+
+            .header > img {
+                margin: 8px;
+            }
+
+        .flex-page {
+            display: flex;
+            background-color: #f1f1f1;
+            margin: 15px;
+            align-content: space-between;
+        }
+
+            .flex-page > div {
+                background-color: #f1f1f1;
+                margin: 12px;
+            }
+
+            .flex-page > img {
+                margin: 5px;
+                align-self: center;
+            }
+
+        .flex-vid {
+            display: flex;
+            background-color: transparent;
+            margin: 15px;
+            justify-content: center;
+        }
+
+        .flex-tabs {
+            display: flex;
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+            .flex-tabs div {
+                margin: 5px;
+                padding: 5px;
+                border: 2px solid black;
+                background-color: #f1f1f1;
+            }
+
+        .navbar {
+            padding: 5px;
+        }
+
+        .price {
+            font-family: monospace;
+            text-align: center;
+        }
+
+        .title {
+            color: black;
+            text-align: center;
+            font-family: Courier;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="navbar">
+        <li><img src="https://blaqoutdesigns.com/images/icons8-progressive-rock-50.png" alt="Double Guitars" id="header-img"></li>
+        <li><h2 style="flex-basis:100%">B-Robs Guitboxes</h2></li>
+        <li><a href="https://blaqoutdesigns.com/index.html">Home</a></li>
+        <li><a href="#ShippingHighlight">Highlights</a>
+        <li><a href="#video">Application</a>
+        <li><a href="#pricing">Pricing</a>
+    </ul>
+
+    <div class="header" id="header">
+        <div>
+            <h2>Quality Guitars at Ghastly Prices</h2>
+        </div>
+
+        <div>
+            <form>
+                <input type="email" id="email" name="email" value="Enter your email address"><br>
+                <input type="submit" value="Submit" id="submit" formaction="https://www.freecodecamp.com/email-submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="flex-page" name="Material Highlight">
+        <img src="https://blaqoutdesigns.com/images/icons8-fire-50.png" alt="fire" />
+        <div>
+            <h2>Flammable Materials</h2>
+            <p>Our guitars are made of the finest flammable materials</p>
+        </div>
+    </div>
+
+    <div class="flex-page" name="Shipping Highlight" id="ShippingHighlight">
+        <img src="https://blaqoutdesigns.com/images/icons8-free-shipping-64.png" alt="shipping" />
+        <div>
+            <h2>Slow Shipping</h2>
+            <p>
+                We ship out guitars very slowly, just to make sure you are
+                frustrated enough when it arrives damaged
+            </p>
+        </div>
+    </div>
+
+    <div class="flex-page" name="Customer Focus">
+        <img src="https://blaqoutdesigns.com/images/icons8-customer-support-64.png" alt="we tried" />
+        <div>
+            <h2>Satisfaction Suggested</h2>
+            <p>We would really like you to be satisfied</p>
+        </div>
+    </div>
+
+    <div class="flex-vid">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/UeIUy8yRmmE" id="video">
+        </iframe>
+    </div>
+
+    <div class="flex-tabs" id="pricing">
+        <div>
+            <h2 class="title">Swamp Ashe Special</h2>
+            <p class="price">$323.65</p><br>
+            <p>That sweet swampy twang</p><br>
+            <p>WHAMMY BAR!!</p><br>
+            <p>Hand Crafted on Easter Island</p><br>
+
+        </div>
+
+        <div>
+            <h2 class="title">Pinewood Princess</h2>
+            <p class="price">$822.21</p>
+            <p>Smooth as Jazz</p><br>
+            <p>Brightest sunburst in the business</p><br>
+            <p>Crafted by Gnomes in Finland</p><br>
+        </div>
+
+        <div>
+            <h2 class="title">Maple Super Deluxe</h2>
+            <p class="price">$3,5864.46</p>
+            <p>Rugged semi hollow body design</p><br>
+            <p>Plug straight into an amp to kill your inner ear</p><br>
+            <p>Laser etched by Jimi Hendrix in Heaven</p><br>
+        </div>
+    </div>
+
+    <a target="_blank" href="https://icons8.com/icons/set/free-shipping">Free Shipping icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+</body>
+</html>
