@@ -1,10 +1,19 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<style>
 		.imagebox {
 			border: 2px solid black;
 			justify-content: center;
+		}
+
+		.imagebox img {
+			height: auto;
+			max-width: 100%;
 		}
 
 		.flex-container {
@@ -19,7 +28,7 @@
 			background-color: #f1f1f1;
 			margin: 10px;
 			padding: 30px;
-			font-size: 30px;
+			font-size: 16px;
 			line-height: 1.7;
 			letter-spacing: 4px;
 			word-spacing: 4px;
@@ -64,6 +73,10 @@
 			color: black;
 		}
 
+		.desc_list {
+			text-align: left;
+		}		
+
 		#roundcorners_01 {
 			border-radius: 25px;
 			border: 2px solid #73AD21;
@@ -78,79 +91,74 @@
 		}
 
 		#roundcorners_flex_02 {
-			border-radius: 5px;
+			border-radius: 15px;
 			border: 2px solid #000000;
 		}
 	</style>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class="header">
-		<h2>About Me</h2>
-	</div>
 
-	<div class="topnav">
-		<a href="https://blaqoutdesigns.com/index.html">Home</a>
-		<a href="https://blaqoutdesigns.com/projects/projects.html">Projects</a>
-		<a href="https://blaqoutdesigns.com/links/links.html">Links</a>
-	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+		<ul class="navbar-nav">
+		<li class="nav-item active">
+		<a class="nav-link" href="/index.html">Home</a>
+		</li>
+		<li class="nav-item"> 
+		<a class="nav-link" href="/projects/projects.html">Projects</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="/links/links.html">Links</a>
+		</li>
+	</nav>
 
-	<div class="imagebox">
-		<img src="#" alt="A Picture of Me"/>
+	<div class="card bg-secondary text-white text-center">
+		<img src="/images/profile_crop_01.jpg" class="rounded card-img-top" alt="A Picture of Me"/>
+		<div class="card-body">
+		<h4 class="card-title">Robert Wilson</h4>
+		<p>Techy Entrepenuer</p>
+		</div>
 	</div>
 	
 
-	<div class="flex-container">
-		<div>
+	<div class="container p-3 my-3 bg-dark text-white">
+		
 		<p>My name is Robert and this is my website. This space allows we to host my own privite Computer Science
 		projects. I have always loved computer technology and I am finally able to explore my hobby a little deeper.
-		I will showcase my various projects with the hope to inspire others to crate. </p><br>
-		</div>
-
-		<div>
-		<p>I coded this entire website by hand, using examples and lessons from freecodecamp.org. The main pages are coded 
-		using basic HTML and CSS. No JS nor any other scripts were used. </p><br>
-		</div>
+		I will showcase my various projects with the hope to inspire others to create. </p><br>
 		
-		<div>
-		<p>We are currently running through AWS on Debian 10. I am able to quickly deploy and maintain remote webservices. 
-		My primary expertise in remote devops is with Linux family of operating systems, mostly Debian.</p><br>
-		</div>
 
-		<div>
+		<p>I coded this entire website by hand, using examples and lessons from <a href="https://freecodecamp.org">freecodecamp.org</a>. The main pages are coded 
+		using basic HTML and CSS. No scripts we used in the construction of the website...yet. </p><br>
+
+		
+		<p>We are currently running through AWS on Debian 10. This is the third deployment I have created with AWS. 
+		My primary expertise in remote devops is with the Linux family of operating systems, mostly Debian.</p><br>
+
+
 		<p>From this Virtual Private Server platform I will be able to deploy several web technologies, building a resume of 
-		services I am able to work with.The 4th quarter of 2020 will see the deployment of a few Django Webframework projects.</p><br>
-		</div>
+		services I am able to work with. The 4th quarter of 2020 will see the deployment of a few Django Webframework projects.</p><br>
 
-		<div>
-		<p>By creating this site with just CSS and HTML allows me to create the site the way I want to without having to
+
+		<p>By creating this site with HTML5, CSS3, and Bootstrap4 allows me to create the site the way I want to without having to
 		worry about being in the confines a specific framework. The only thing I need is text editor and a terminal. Nano
-		has become my new best friend.</p>
+		has become my new best friend. It's interesting seeing the construction of web media from the inside out with the 
+		basic bulding blocks that will be used in other frameworks.</p>
 		
 	</div>
 
-	<div class="desc_list">
-		<dl>
-		<dt>Education</dt>
-		<dd>University of Connecticut</dd>
-		<dt>Career Path</dt>
-		<dd>Paper Boy</dd>
-		<dt>Long Term Goals</dt>
-		<dd>Electronics Projects</dd>
-		<dd>Garden</dd>
-		</dl>
-	</div>
-
-	<div class="sub_header">
+	<div class="container text-center">
 		<h2>Here are some links to my favorite places</h2>
+
+		<div class="btn-group">
+		<a href="https://www.marvel.com"><button type="button" class="btn btn-outline-dark">Comics</button></a>
+		<a href="https://www.goodreads.com/list/show/19341"><button type="buton" class="btn btn-outline-dark">Sci Fi</button></a>
+		<a href="https://www.pinkfloyd.com/home.php"><button type="button" class="btn btn-outline-dark">Music</button></a>
+		<a href="https://www.adafruit.com"><button type="button" class="btn btn-outline-dark">Tech</button></a>
+		</div>
 	</div>
 
-	<div class="flex-container" id="roundcorners_flex_01">
-		<a href="https://www.marvel.com"><p id="roundcorners_flex_02">Comics</p></a>
-		<a href="https://www.goodreads.com/list/show/19341"><p id="roundcorners_flex_02">Books</p></a>
-		<a href="https://www.pinkfloyd.com/home.php"><p id="roundcorners_flex_02">Music</p></a>
-		<a href="https://www.adafruit.com"><p style="flex-shrink: 0" id="roundcorners_flex_02">Electronics</p></a>
-	</div>
 </body>
 
 
