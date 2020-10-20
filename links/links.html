@@ -5,106 +5,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LINKS and more...</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .header {
-            font-family: sans-serif;
-            background-color: #f1f1f1;
-            padding: 20px;
-            text-align: center
-        }
-
-        .fleximage {
-            display: flex;
-        }
-
-        .flextext {
-            display: flex;
-            background-color: #f6f6f6;
-	    
-        }
-
-        .navbar {
-            display: flex;
-            background-color: #333;
-        }
-
-            .navbar > a {
-                text-decoration: none;
-                background-color: #a9a4a4;
-                color: black;
-                margin: 0;
-		padding: 2px;
-            }
-
-            .navbar a:hover {
-                background-color: #212020;
-                color: white;
-            }
-
-        img {
-            border-radius: 8px;
-            width: auto;
-            height: 100%;
-        }
-
-	ul li {
-	    list-style-type: none;
-	    margin: 10px;
-	    padding: 25px;
-	    background-color: transparent;
-	}
-
-        ul a {
-	    font-size: 32px;
-	    padding: 20px;
-            list-style-type: none;
-	    text-decoration: none;
-	    color: black;
-	    background-color: #f1f1f1;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="container">
 
-    <div class="header">
-	<h2>Links Links Links</h2>
+    
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+	<ul class="navbar-nav">
+        <li class="nav-item active"><a href="/index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/aboutme/about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/links/VideoLinks_01.html" class="nav-link">Links</a></li>
+    </nav>
+
+    <div class="container text-center">
+	<h3>These are just a few of my favorite places on the Internet</h3>
     </div>
 
-    <div class="navbar">
-        <a href="https://blaqoutdesigns.com/index.html">Home</a>
-        <a href="https://blaqoutdesigns.com/aboutme/about.html">About</a>
-        <a href="https://blaqoutdesigns.com/links/VideoLinks_01.html">Links</a>
+    <div class="container">
+
+	<a href="https://www.lego.com/en-us" class="btn btn-block btn-dark ">LEGO</a>
+
+	<a href="https://brickset.com" class="btn btn-block btn-dark">Brickset</a>
+
+	<a href="https://python.org" class="btn btn-block btn-dark">Python</a>
+
+	<a href="https://w3schools.com" class="btn btn-block btn-dark">W3Schools</a>
+
+	<a href="https://html.com/html5/" class="btn btn-block btn-dark">HTML5</a>
+
+	<a href="http://www.css3.info/" class="btn btn-block btn-dark">CSS3</a>
+
+	<a href="https://djangoproject.com" class="btn btn-block btn-dark">Django</a>
+
     </div>
 
-    <div class="flextext">
-        <ul>
-
-        <li>
-	<a href="https://www.lego.com/en-us">LEGO</a>
-	</li>
-
-        <li>
-	<a href="https://brickset.com">Brickset</a>
-	</li>
-
-	<li>
-	<a href="https://python.org">Python</a>
-	</li>
-
-	<li>
-	<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
-	</li>
-
-	</ul>
-    </div>
-
- </body>
+</div>
+</body>
 </html>
