@@ -3,15 +3,6 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background-color: #264653;
-        }
-
         .header {
             background-color: #f1f1f1;
             padding: 5px;
@@ -23,66 +14,13 @@
                 font-size: 48px;
             }
 
-        .topnav {
-            overflow: hidden;
-            background-color: #264653;
+        #card {
+
         }
-
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                .topnav a:hover {
-                    background-color: #2A9D8F;
-                    color: black;
-                }
-
-        .column {
-            border-radius: 10px;
-            border: 2px solid black;
-            background-color: #E9C46A;
-            overflow: auto;
-            float: left;
-            width: 50%;
-            height: 50%;
-            padding: 15px;
-            margin: 0;
-        }
-
-            .column p {
-                letter-spacing: 3px;
-                line-height: 24px;
-            }
-
-            .column a {
-                color: black;
-                text-decoration: none;
-            }
-
-            .column h2 {
-                text-align: center;
-            }
-
-            .column p::first-letter {
-                color: #E76F51;
-                font-size: xx-large;
-            }
-
-        .row {
-            height: 1000px;
-        }
-
-            .row::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
+	.card-body >  p::first-letter {
+	    color: #E76F51;
+	    font-size: xx-large;
+	}               
         code {
             background-color: #F4A261;
             padding: 2px;
@@ -97,73 +35,95 @@
             }
         }
     </style>
-    <meta charset="utf-8" />
     <title>BlaqOut Designs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6b3467f10e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdjns.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Welcome to BlaqOut Designs</h1>
-        <p>A personal journey through the digital community</p>
-    </div>
+    <div class="container-fluid">
 
-    <div class="topnav">
-        <a href="https://blaqoutdesigns.com/aboutme/about.html">About Me</a>
-        <a href="https://blaqoutdesigns.com/projects/projects.html">Projects</a>
-        <a href="https://blaqoutdesigns.com/forum/forum.html">Forum</a>
-        <a href="https://blaqoutdesigns.com/links/links.html">More Links</a>
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <h2>Intel&trade; vs. AMD&trade;</h2>
-            <p>
-                A question as old as time, well the short time since we were first introduced to the AMD K6 series chips.
-                Since then the two rivals have batted insults and traded bits in the highly competetive chip manufacturing space.
-                Personally, I have always been a fan of AMD chips since my first Athlon II. I recently built a new workstation
-                built arounf the new AMD Ryzen chips.
-            </p><br>
-            <p>
-                I will continue to support AMD, since I beleive in healthy competition, as AMD and Intel push and pull.
-                In the end, my loyalties often align with the underdog.
-            </p>
+        <div class="header bg-secondary">
+            <h1>Welcome to BlaqOut Designs</h1>
+            <p>A personal journey through the digital community</p>
         </div>
 
-        <div class="column">
-            <h2>Future Personal Tranportation</h2>
-            <p>
-                What will the future of personal tranportation hold for us in the coming decade? Are we still going to be
-                driving in cars as we are now with a different propulsion system? Is the electric car just a stepping stone
-                to something even better and new?
-            </p>
-            <p>
-                Let's explore what is on the horizon. We are already well aware of Tesla, the electric car giant. The innovations
-                and exposure the company has brought to the electric car market. Tesla is not the first company to release an electric car,
-                in fact the first production electic vehicle dates back to at least 1881<sup>
-                    <a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle#Early_history">
-                        1
-                    </a>
-                </sup>.The late 1800's saw an explosion of different electric vehicle models as the internal combustion engine(ICE) was still in
-                it's infancy.
-            </p>
-	    <p>
-		Sadly with the rise of the ICE the development of the personal electric vehicle market stalled.
-	    </p>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://blaqoutdesigns.com/aboutme/about.html">About Me</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://blaqoutdesigns.com/forum/forum.html">Forum</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://blaqoutdesigns.com/links/links.html">More Links</a>
+                </li>
+            </ul>
+        </nav>
+
+    <div class="card-deck">
+        <div class="card-deck">
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>Intel&trade; vs. AMD&trade;</h3></div>
+            <div class="card-body">
+                <p class="card-text">
+                    A question as old as time, well the short time since we were first introduced to the AMD K6 series chips.
+                    Since then the two rivals have batted insults and traded bits in the highly competetive chip manufacturing space.
+                    Personally, I have always been a fan of AMD chips since my first Athlon II. I recently built a new workstation
+                    built around the new AMD Ryzen chips.
+                </p><br>
+                <p class="card-text">
+                    I will continue to support AMD, since I beleive in healthy competition, as AMD and Intel push and pull.
+                    In the end, my loyalties often align with the underdog.
+                </p>
+            </div>
         </div>
 
-        <div class="column">
-            <h2>32-bit vs 64-bit</h2>
-            <p>
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>Future Personal Tranportation</h3></div>
+                <div class="card-body" id="card">
+                    <p class="card-text">
+                        What will the future of personal tranportation hold for us in the coming decade? Are we still going to be
+                        driving in cars as we are now with a different propulsion system? Is the electric car just a stepping stone
+                        to something even better and new?
+                    </p>
+                    <p class="card-text">
+                        Let's explore what is on the horizon. We are already well aware of Tesla, the electric car giant. The innovations
+                        and exposure the company has brought to the electric car market. Tesla is not the first company to release an electric car,
+                        in fact the first production electic vehicle dates back to at least 1881
+                        <sup>
+                            <a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle#Early_history">1</a>
+                        </sup>.The late 1800's saw an explosion of different electric vehicle models as the internal combustion engine(ICE) was still in
+                        it's infancy.
+                    </p>
+                    <p class="card-text">
+                        Sadly with the rise of the ICE the development of the personal electric vehicle market stalled. That is not to say that research and
+                        development halted all together for electric motors. In fact, the electric motor is a cornerstone of modern industrial
+                        operations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>32-bit vs 64-bit</h3></div>
+	    <div class="card-body">
+            <p class="card-text">
                 What is the difference between 32-bits and 64-bits. First of all, what is a bit? To
                 put it very simply, a bit is a binary instruction that can be understood by a computer.
                 In our case a bit is either 0 or 1, off or on, yes or no.
             </p>
-            <p>To keep things as simple as possible let's look at the binary representation of the decimal numbers up to 8.</p>
+            <p class="card-text">To keep things as simple as possible let's look at the binary representation of the decimal numbers up to 8.</p>
             <code>0001 = 2<sup>0</sup> = 1</code><br><br>
             <code>0010 = 2<sup>1</sup> = 2</code><br><br>
             <code>0100 = 2<sup>2</sup> = 4</code><br><br>
             <code>1000 = 2<sup>3</sup> = 8</code><br><br>
-            <p>
+            <p class="card-text">
                 Starting from right to left, the '1' digit represents the presence of a power of 2 corresponding
                 with the postion of the digit in binary code.
             </p>
@@ -187,38 +147,50 @@
                 and pattern applies to 64-bit registers. This allows data flows as wide as 64 bits wide. This gives us a range from 0 all the way up to...
                 18,446,744,073,709,551,615. That is over 18 thousand trillion numbers!! Double WoW WoW!!
             </p>
+	    </div>
+        </div>
         </div>
 
-        <div class="column">
-            <h2>LEGO &trade; or Lepin</h2>
+        <div class="card-deck">
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>LEGO &trade; or Lepin</h3></div>
+	    <div class="card-body">
             <p>
                 Do I need to even go down this route? Lepin is the epitome of knock-off, stay away. I will always choose LEGO as my building hobby of choice.
                 Where to even start, how about manufacturing tolerances. The LEGO Group has spent decades and decades refining their plastic dies. So when a part
                 clicks into place you can be sure of a long lasted and solid connection.
             </p>
+	    </div>
         </div>
 
-        <div class="column">
-            <h2>The Sentinal</h2>
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>The Sentinal</h3></div>
+	    <div class="card-body">
             <p>
                 Digital Scarecrows&trade; to protect your beautiful gardens from nasty critters. Monitor you precious lots from miles away or from the
                 comfort of your favorite couch. You can choose from a variety of asthetic and technical configurations, to accomodate for various needs. It
                 may be an HOA requirement, or a specific environmental reuirement. The Sentinal
             </p>
+	    </div>
         </div>
 
-        <div class="column">
-            <h2>The Gopher</h2>
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>The Gopher</h3></div>
+	    <div class="card-body">
             <p>
                 We all have been in that situation before, when an activity transforms from a hobby into an all consuming passion. The Gopher range of
                 products satisfy that itch to get more data about your agricultural project.The Gopher&trade; is a sensor suite that measures different data points
                 within your plot area. Soil pH may be more insightful for plants that need alkaline conditions. Perhaps you know you have a clay layer that traps water
                 pockets and you want to be warned if flooding events are occuring below the surface. With this easily deployed
             </p>
+	    </div>
+        </div>
         </div>
 
-        <div class="column">
-            <h2>Bootstrap</h2>
+        <div class="card-deck">
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>Bootstrap</h3></div>
+	    <div class="card-body">
 	    <p>
 		Currently this site is coded and styled using only HTML5 and CSS3. With these two languages alone I can create a decent looking, modern, and 
 		responsive web design. It is good to learn the basics before moving on with more modern frameworks.
@@ -234,22 +206,31 @@
 		I have converted my about page to the new Bootstrap4 Framework. What a marked improvement. I am able to simply invoke element classes inside
 		element tag, drastically improving development and design time.
 	    </p>	    
- 
+ 	    </div>
         </div>
 
-        <div class="column">
-            <h2>The Prowler</h2>
+
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>The Prowler</h3></div>
+	    <div class="card-body">
             <p>
                 One of the oldest problem we have faced since culitvation has began, is the ever present presence of critters. From rodents, to racoons, we
                 have endured them all. The question that I have always had is how to deter these animals humanely and with the smallest impact on the environment.
                 The Prolwer&trade; is one of those humane solutions that focuses mostly on deterents. Small ground based liquid projectors can deliver various liquids
                 such hot pepper spray or vingar. We prefer the bio degradable and non toxic deterent options.
             </p>
+	    </div>
         </div>
 
-        <div class="column">
-            <h2>Coming Soon</h2>
+        <div class="card bg-secondary text-white">
+            <div class="card-header"><h3>Coming Soon</h3></div>
+	    <div class="card-body">
+	    <p></p>
+	    </div>
         </div>
+        </div>
+
+    </div>
 
     </div>
 
